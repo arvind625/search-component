@@ -1,7 +1,17 @@
 # Getting Started with Search Component
+This project contains the functionality Search Bar like youtube search bar
 
-## Available Scripts
+## Prior requirement for running this project locally
+ git and nodejs must be installed in your machine
 
-In the project directory, you can run:
+## Run this project locally with the help of following steps:-
+
+clone the repo
+
+cd to project repo
+
+run following npm commands
+
+### `npm install`
 
 ### `npm start`
