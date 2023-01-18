@@ -1,2 +1,7 @@
-# search-component
-Implementation of search bar like youtube
+# Getting Started with Search Component
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`

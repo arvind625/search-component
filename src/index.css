@@ -1,0 +1,124 @@
+:root {
+  --border: 1px solid rgb(238, 154, 154);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  margin-bottom: 10px;
+  border: var(--border);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #d4a5a5;
+}
+
+.user-id {
+  font-weight: bold;
+}
+
+.user-name {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.user-items {
+  /* margin-top: 5px; */
+  font-size: 14px;
+}
+
+.user-address {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.user-pincode {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.highlight {
+  background-color: blue;
+  color: white;
+}
+
+.no-results-card {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #ccc;
+  border: var(--border);
+}
+
+.search-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+  grid-template-rows: 1fr repeat(10, 2fr);
+}
+
+.search-icon {
+  margin: 0 8px 0 5px;
+  max-width: 19px;
+  max-height: 19px;
+  margin: 0 10px;
+  width: 21px;
+  opacity: .8;
+  overflow: hidden;
+
+}
+
+.search-box {
+  /* grid css for search box */
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+
+  /* search icon and input component css */
+  display: flex;
+  justify-content: center;
+  border: var(--border);
+}
+
+.search-input,
+.search-input:focus {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.search-list {
+  grid-column: 3 / 4;
+  grid-row: 2 / 9;
+  /* box-shadow: 10px 5px 5px rgb(235, 233, 233); */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 5px;
+}
